@@ -8,9 +8,7 @@
   "main": "indgit remote -vex.js",
   "scripts": {
     "dev": "concurrently \"tsc -w\" \"nodemon ./dist/index.js\"",
-    "start": "node dist/index.js",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -28,8 +26,7 @@
     "@types/express": "^4.17.11",
     "@types/express-handlebars": "^3.1.0",
     "@types/morgan": "^1.9.2",
-    "@types/mysql2": "github:types/mysql2",
-    "concurrently": "^6.0.0",
+    "concurrently": "^6.0.2",
     "nodemon": "^2.0.7"
   }
 }
