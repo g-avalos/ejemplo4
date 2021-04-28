@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "concurrently \"tsc -w\" \"nodemon ./dist/index.js\"",
     "start": "node dist/index.js",
-    "build": "npm install --prod"
+    "build": "npm install --prod",
+    "heroku-prebuild": "npm install --only=prod"
   },
   "keywords": [],
   "author": "",
